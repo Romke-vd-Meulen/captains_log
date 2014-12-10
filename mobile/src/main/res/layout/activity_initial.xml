@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".InitialActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/initial_title"
+        android:id="@+id/initial_title"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_display_2_material" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/initial_intro_text"
+        android:id="@+id/initial_intro_text"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/activity_vertical_spacing"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textSize="@dimen/abc_text_size_headline_material" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/initial_hint_text"
+        android:id="@+id/initial_hint_text"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/activity_vertical_spacing"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:paddingBottom="@dimen/activity_vertical_spacing" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_button_text"
+        android:id="@+id/initial_button"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:onClick="startTimer" />
+</LinearLayout>

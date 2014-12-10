@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".StopTimer"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/stopped_title"
+        android:id="@+id/stopped_title"
+        android:textSize="@dimen/abc_text_size_display_2_material"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/stopped_description_pre"
+        android:id="@+id/stopped_description_pre"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/activity_vertical_spacing"
+        android:layout_marginBottom="@dimen/activity_vertical_spacing_half" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stopped_chronometer"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_display_2_material"
+        android:enabled="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/stopped_description_post"
+        android:id="@+id/stopped_description_post"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/activity_vertical_spacing_half"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/activity_vertical_spacing" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/description"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.00"
+        android:editable="true"
+        android:clickable="false"
+        android:background="#ffffffff" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_spacing_half">
+
+        <Button
+            android:id="@+id/stopped_button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stopped_button_next"
+            android:layout_alignParentLeft="true"
+            android:onClick="storeDescriptionAndNewEntry" />
+
+        <Button
+            android:id="@+id/stopped_button_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stopped_button_finish"
+            android:layout_alignParentRight="true"
+            android:onClick="storeDescriptionAndFinish" />
+
+    </RelativeLayout>
+</LinearLayout>

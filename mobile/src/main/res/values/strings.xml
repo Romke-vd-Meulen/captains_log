@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Captain\'s Log</string>
+    <string name="action_settings">Settings</string>
+    <string name="initial_title">Captain\'s Log</string>
+    <string name="initial_intro_text">Welcome to your Captain\'s Log, where you keep precise track of what you\'re spending your time on.</string>
+    <string name="initial_hint_text">You know what you should do?</string>
+    <string name="initial_button_text">Push the button!</string>
+    <string name="started_activity_title">Start Timer</string>
+    <string name="started_title">All right!</string>
+    <string name="started_description_pre">You\'ve been going at it for</string>
+    <string name="button_stoptimer_normal">I\'m done!</string>
+    <string name="button_stoptimer_mistake">I screwed up!</string>
+    <string name="title_activity_stop_timer">Timer Stopped</string>
+    <string name="stopped_title">Well done!</string>
+    <string name="stopped_description_pre">You started your last entry</string>
+    <string name="stopped_description_post">ago.\nWhat did you do in that time?</string>
+    <string name="stopped_button_next">Done, new entry</string>
+    <string name="stopped_button_finish">Done for today</string>
+    <string name="title_activity_finished">FinishedActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="finished_title">And we\'re done!</string>
+    <string name="finished_description_text">Here\'s today\'s entries:</string>
+    <string name="button_exit">Exit</string>
+    <string name="button_send_by_mail">Mail this to me</string>
+
+</resources>
